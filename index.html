@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,57 +14,62 @@
     <tr>
       <td class="parent">
         <div class="grid-item box" id="box1" style="background-color: rgb(68, 167, 167);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 1
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 1
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box2" style="background-color: rgb(160, 82, 82);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 2
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 2
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box3" style="background-color: rgb(204, 212, 83);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 3
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 3
         </div>
       </td>
     </tr>
     <tr>
       <td class="parent">
         <div class="grid-item box" id="box4" style="background-color: rgb(42, 121, 121);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 4
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 4
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box5" style="background-color: rgb(94, 160, 204);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 5
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 5
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box6" style="background-color: rgb(99, 100, 192);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 6
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 6
         </div>
       </td>
     </tr>
     <tr>
       <td class="parent">
         <div class="grid-item box" id="box7" style="background-color: rgb(181, 118, 194);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 7
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 7
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box8" style="background-color: rgb(255, 0, 34);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 8
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 8
         </div>
       </td>
       <td class="parent">
         <div class="grid-item box" id="box9" style="background-color: rgb(129, 122, 122);" draggable="true"
-          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)"> 9
+          ondragstart="drag(event)" ondrop="drop(event)" ondragend="dragend(event)" ondragover="allowDrop(event)" ondragstart="dragstart(event)"> 9
         </div>
       </td>
     </tr>
   </table>
-  <button class="undo" onclick="undo()">Undo</button>
-  <script src="/script.js"></script>
+  <div class="button">
+    <button class="undo" onclick="undo()">Undo</button>
+  <button class="undo" onclick="location.reload()">Reset</button>
+  </div>
+  
+  <span id="flash"></span>
+  <script src="script.js"></script>
 </body>
 
 </html>
